@@ -15,7 +15,9 @@ function Movie(props) {
             <img className="activator" src={poster} alt={`https://via.placeholder.com/300x400?text=${title}`} />
           </a>
         ) : (
-          <img className="activator" src={poster} alt={title} />
+          <a href={'https://www.imdb.com/title/' + id} target="_blank" rel="noreferrer">
+            <img className="activator" src={poster} alt={title} />
+          </a>
         )}
       </div>
       <div className="card-content">
