@@ -12,7 +12,11 @@ function Movie(props) {
       <div className="card-image waves-effect waves-block waves-light">
         {poster === 'N/A' ? (
           <a href={'https://www.imdb.com/title/' + id} target="_blank" rel="noreferrer">
-            <img className="activator" src={`https://via.placeholder.com/300x400?text=${title}`} alt={poster} />
+            <img
+              className="activator"
+              src={`https://via.placeholder.com/300x400?text=${title}`}
+              alt={poster}
+            />
           </a>
         ) : (
           <a href={'https://www.imdb.com/title/' + id} target="_blank" rel="noreferrer">
